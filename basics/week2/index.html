@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌤 Weather</title>
+    <style>
+      body {
+        font-family: helvetica;
+      }
+      h1 {
+        color: #1a64d6;
+        font-size: 35px;
+        text-align: center;
+        font-family: helvetica;
+        margin: 0% auto;
+      }
+      h2 {
+        text-align: center;
+        color: #272044;
+        font-weight: normal;
+        font-size: 35px;
+        margin: 1%;
+      }
+      .main_max_t {
+        font-weight: bold;
+        color: #000000;
+      }
+
+      .max_t {
+        font-weight: bold;
+        color: #4d4c48;
+      }
+      ul {
+        padding: 0;
+        display: block;
+        margin: 35px auto;
+        text-align: center;
+        font-size: 20px;
+      }
+      li {
+        transition: all 150ms ease-in-out;
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        padding: 15px 0px;
+        text-align: center;
+        list-style: none;
+        max-width: 400px;
+      }
+      li:hover {
+        background: #fffbef;
+      }
+      .day {
+        font-weight: bold;
+      }
+      .temperature {
+        padding: 15px;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: lighter;
+        color: #908e87;
+      }
+      button {
+        color: #ffffff;
+        display: block;
+        background: #1a64d6;
+        padding: 16px 24px;
+        border: 1px solid #1a64d6;
+        margin: 20px auto;
+        font-size: 16px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+        line-height: 20px;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        cursor: pointer;
+      }
+      footer {
+        color: #4d4d4d;
+        font-size: 18px;
+        text-align: center;
+        font-family: monospace;
+        margin: 15px;
+        padding: 0;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤 <br />
+      <script>
+        alert("Hello Word");
+      </script>
+      Currently 21° in Tokyo
+    </h1>
+    <h2>13° / <span class="main_max_t">23°</span></h2>
+    <ul>
+      <li>
+        <div class="day">🌧 Tomorrow</div>
+        <div class="temperature">10° / <span class="max_t">22°</span></div>
+      </li>
+      <li>
+        <div class="day">☁ Saturday</div>
+        <div class="temperature">15° / <span class="max_t">17°</span></div>
+      </li>
+      <li>
+        <div class="day">🌞 Sunday</div>
+        <div class="temperature">25° / <span class="max_t">28°</span></div>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <footer>Coded by Valentina Muñoz</footer>
+  </body>
+</html>
