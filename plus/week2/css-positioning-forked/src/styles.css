@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+  font-size: 34px;
+  line-height: 48px;
+}
+
+h3 {
+  padding: 5px 0;
+}
+h1,
+h2,
+h3 {
+  color: #231d3c;
+}
+
+/*li {
+  list-style-position: inside;
+}
+*/
+.logo {
+  width: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.img-positioning {
+  display: block;
+  margin: 30px auto;
+  width: 75%;
+}
+
+.cities {
+  background: #fff;
+  padding: 20px;
+  text-align: right;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.emojis {
+  padding: 20px 0;
+}
+
+.emojis .first {
+  position: relative;
+  top: -10px;
+}
+.emojis .second {
+  position: relative;
+  top: 10px;
+  right: 20px;
+}
+.emojis .third {
+  position: relative;
+  top: 30px;
+  right: 40px;
+}

@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  background: white;
+
+  /* position: relative;
+  top: 10px;
+  left: 100px; */
+
+  /* position: absolute;
+  top: 200px;
+  left: 100px; */
+}
+img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
