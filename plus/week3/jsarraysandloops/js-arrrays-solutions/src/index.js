@@ -7,7 +7,7 @@ let weekDays = [
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday"
+  "Sunday",
 ];
 
 // Challenge 2
@@ -30,7 +30,7 @@ console.log(weekDays);
 
 // Challenge 5
 // Alert every day of the week this way:`Temperature on Monday is 18 degrees’
-weekDays.forEach(function(day) {
+weekDays.forEach(function (day) {
   console.log(`Temperature on ${day} is 18 degrees`);
 });
 
