@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Arrays and Loops</title>
+  </head>
+  <body>
+    <h1>JS Arrays and Loops</h1>
+    <ul>
+      <li>Chile</li>
+      <li>Argentina</li>
+      <li>Peru</li>
+      <li>Bolivia</li>
+    </ul>
+    <script>
+      // Array
+      let cities = ["New York", "Paris", "Moscow", "Santiago"];
+      console.log(cities);
+      let names = [];
+      typeof names;
+      cities[0];
+      cities[3];
+      cities[4];
+      cities[0] = "London";
+      cities[4] = "Barcelona";
+
+      //   // Loop Example 1
+      //   function showCountry(country) {
+      //     alert(country);
+      //     console.log(country);
+      //   }
+      //   let countries = ["Chile", "Spain", "Colombia"];
+      //   console.log(countries[2]);
+      //   countries.forEach(showCountry);
+
+      //   // Loop Example 2
+      //   function showCountry(countryElement) {
+      //     console.log(countryElement.innerHTML);
+      //   }
+      //   let countries = document.querySelectorAll("li");
+      //   countries.forEach(showCountry);
+
+      // Loop Example 3
+      function showCountry(countryElement) {
+        countryElement.innerHTML = "<em>" + countryElement.innerHTML + "</em>";
+      }
+      let countries = document.querySelectorAll("li");
+      countries.forEach(showCountry);
+    </script>
+  </body>
+</html>
