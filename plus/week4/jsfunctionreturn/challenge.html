@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Functions</title>
+  </head>
+  <body>
+    <h1>JS Functions return</h1>
+    <script>
+      function isWindy(speed, unit) {
+        if (speed > 5 && unit === "metric") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      if (isWindy(2, "imperial")) {
+        alert("It is windy");
+      } else {
+        alert("It is not windy");
+      }
+    </script>
+  </body>
+</html>
