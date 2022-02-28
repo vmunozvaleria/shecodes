@@ -15,10 +15,12 @@
           placeholder="Search for a City"
           autocomplete="off"
           autofocus="on"
+          id="search-text-input"
         />
         <input type="submit" value="Search" />
       </form>
     </h1>
+    <h2></h2>
     <script>
       function follow(event) {
         event.preventDefault();
@@ -26,9 +28,19 @@
         link.innerHTML = "Following";
       }
 
-      function search() {
-        alert("Searching");
+      function search(event) {
+        event.preventDefault();
+        let searchInput = document.querySelector("#search-text-input");
+        console.log(searchInput.value);
+
+        let h2 = document.querySelector("h2");
+        if (searchInput.value) {
+          h2.innerHTML = `Searching for ${searchInput.value}... `;
+        } else {
+          alert("Please type a City");
+        }
       }
+
       let followLink = document.querySelector("#follow");
       followLink.addEventListener("click", follow);
 
