@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -48,8 +49,8 @@
                       <br />
                       <i class="fa-solid fa-cloud cloud-icon"></i>
                       <br />
-                      Clouds <br />
-                      <span id="temp"> 18 ºC</span>
+                      <span id="description">Clouds</span> <br />
+                      <span id="temp"> 18 </span>ºC
 
                       <br />
                       <br />
@@ -58,8 +59,8 @@
 
                   <div class="col-6">
                     <p class="card-text">
-                      Humidity 20% <br />
-                      Precipitation 10%<br />
+                      Humidity <span id="humidity">20</span>%<br />
+                      Pressure <span id="pressure"> 1000</span> hPa<br />
                       <br />
                       <br />
                     </p>
