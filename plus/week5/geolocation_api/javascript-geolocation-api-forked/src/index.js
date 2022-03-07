@@ -1,4 +1,3 @@
-// My position
 function myPosition(position) {
   console.log("Latitud");
   let lat = position.coords.latitude;
@@ -15,11 +14,7 @@ function myPosition(position) {
   }
 
   let key = "f460d367f2f35c17c3c62d368d6bd207";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric&cnt=10`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=-${lon}&appid=${key}&units=metric`;
   axios.get(url).then(displayWeather);
 }
 navigator.geolocation.getCurrentPosition(myPosition);
-
-// My temperature
-
-// api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=f460d367f2f35c17c3c62d368d6bd207
